@@ -1,0 +1,12 @@
+{
+  "name": "bckend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --ignore-watch node_modules --transpile-only index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js",
+    "seed": "ts-node src/model/seed.ts"
+  }
+}
